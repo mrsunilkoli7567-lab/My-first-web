@@ -3,667 +3,374 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Moments Cafe & Lounge - Experience fine dining in our modern lounge atmosphere with private cabins, multi-cuisine menu and exceptional service in Kota">
-    <meta name="keywords" content="restaurant, cafe, lounge, kota, fine dining, private cabins, multi-cuisine, Indian, Chinese, Italian, Continental">
-    <meta name="author" content="Moments Cafe & Lounge">
-    <title>Moments Cafe & Lounge - Fine Dining Restaurant in Kota</title>
-    <meta name="google-site-verification" content="0n82yJ3MbTDYZMtP_pwinQX1DUJXlR7w_a4G9j0tWSI" />
-    
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
-        
-        /* Navigation */
-        .navbar {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: rgba(0, 0, 0, 0.95);
-            backdrop-filter: blur(10px);
-            z-index: 1000;
-            padding: 1rem 0;
-            transition: all 0.3s ease;
-        }
-        
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 2rem;
-        }
-        
-        .logo {
-            font-size: 1.8rem;
-            font-weight: bold;
-            color: #ff6b35;
-            text-decoration: none;
-        }
-        
-        .nav-menu {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-        }
-        
-        .nav-link {
-            color: #fff;
-            text-decoration: none;
-            transition: color 0.3s ease;
-            font-weight: 500;
-        }
-        
-        .nav-link:hover {
-            color: #ff6b35;
-        }
-        
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-        }
-        
-        .bar {
-            width: 25px;
-            height: 3px;
-            background: #fff;
-            margin: 3px 0;
-            transition: 0.3s;
-        }
-        
-        /* Hero Section */
-        .hero {
-            height: 100vh;
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23ff6b35" width="1200" height="800"/><rect fill="%23000" opacity="0.3" width="1200" height="800"/></svg>');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-        }
-        
-        .hero-content h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1rem;
-            animation: fadeInUp 1s ease;
-        }
-        
-        .hero-content p {
-            font-size: 1.3rem;
-            margin-bottom: 2rem;
-            animation: fadeInUp 1s ease 0.3s both;
-        }
-        
-        .cta-button {
-            background: #ff6b35;
-            color: white;
-            padding: 1rem 2rem;
-            border: none;
-            border-radius: 50px;
-            font-size: 1.1rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            display: inline-block;
-            animation: fadeInUp 1s ease 0.6s both;
-        }
-        
-        .cta-button:hover {
-            background: #e55530;
-            transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(255, 107, 53, 0.3);
-        }
-        
-        /* About Section */
-        .about {
-            padding: 5rem 2rem;
-            background: #f8f8f8;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        .section-title {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 3rem;
-            color: #333;
-        }
-        
-        .about-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-        
-        .feature-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 15px;
-            text-align: center;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .feature-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-        }
-        
-        .feature-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: #ff6b35;
-        }
-        
-        /* Menu Section */
-        .menu {
-            padding: 5rem 2rem;
-            background: white;
-        }
-        
-        .menu-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-        
-        .menu-category {
-            background: #f8f8f8;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .menu-category:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-        }
-        
-        .menu-header {
-            background: #ff6b35;
-            color: white;
-            padding: 1.5rem;
-            text-align: center;
-        }
-        
-        .menu-header h3 {
-            font-size: 1.5rem;
-        }
-        
-        .menu-items {
-            padding: 1.5rem;
-        }
-        
-        .menu-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 0;
-            border-bottom: 1px solid #eee;
-        }
-        
-        .menu-item:last-child {
-            border-bottom: none;
-        }
-        
-        .item-name {
-            font-weight: 600;
-            color: #333;
-        }
-        
-        .item-price {
-            color: #ff6b35;
-            font-weight: bold;
-            font-size: 1.1rem;
-        }
-        
-        /* Testimonials */
-        .testimonials {
-            padding: 5rem 2rem;
-            background: #f8f8f8;
-        }
-        
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-        
-        .testimonial-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            position: relative;
-        }
-        
-        .testimonial-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-        }
-        
-        .testimonial-card::before {
-            content: '"';
-            font-size: 4rem;
-            color: #ff6b35;
-            position: absolute;
-            top: -10px;
-            left: 20px;
-            line-height: 1;
-        }
-        
-        .testimonial-text {
-            font-style: italic;
-            margin-bottom: 1rem;
-            padding-top: 1rem;
-        }
-        
-        .testimonial-author {
-            font-weight: bold;
-            color: #ff6b35;
-        }
-        
-        /* Booking Section */
-        .booking {
-            padding: 5rem 2rem;
-            background: white;
-        }
-        
-        .booking-form {
-            max-width: 600px;
-            margin: 2rem auto;
-            background: #f8f8f8;
-            padding: 2rem;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-        
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-        
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-weight: 600;
-            color: #333;
-        }
-        
-        .form-group input,
-        .form-group select,
-        .form-group textarea {
-            width: 100%;
-            padding: 0.8rem;
-            border: 2px solid #ddd;
-            border-radius: 10px;
-            font-size: 1rem;
-            transition: border-color 0.3s ease;
-        }
-        
-        .form-group input:focus,
-        .form-group select:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: #ff6b35;
-        }
-        
-        .form-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
-        }
-        
-        .submit-btn {
-            background: #ff6b35;
-            color: white;
-            padding: 1rem 2rem;
-            border: none;
-            border-radius: 50px;
-            font-size: 1.1rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            width: 100%;
-        }
-        
-        .submit-btn:hover {
-            background: #e55530;
-            transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(255, 107, 53, 0.3);
-        }
-        
-        .whatsapp-btn {
-            background: #25d366;
-            color: white;
-            padding: 1rem 2rem;
-            border: none;
-            border-radius: 50px;
-            font-size: 1.1rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            width: 100%;
-            margin-top: 1rem;
-            text-decoration: none;
-            display: inline-block;
-            text-align: center;
-        }
-        
-        .whatsapp-btn:hover {
-            background: #128c7e;
-            transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3);
-        }
-        
-        /* Contact */
-        .contact {
-            padding: 5rem 2rem;
-            background: #f8f8f8;
-        }
-        
-        .contact-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            margin-top: 2rem;
-        }
-        
-        .contact-info h3 {
-            color: #ff6b35;
-            margin-bottom: 1rem;
-        }
-        
-        .contact-item {
-            margin-bottom: 2rem;
-        }
-        
-        .contact-item h4 {
-            color: #333;
-            margin-bottom: 0.5rem;
-        }
-        
-        .map-container {
-            height: 400px;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-        
-        .map-container iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-        
-        /* Footer */
-        .footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 2rem;
-        }
-        
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        .social-links {
-            margin: 1rem 0;
-        }
-        
-        .social-links a {
-            color: white;
-            text-decoration: none;
-            margin: 0 1rem;
-            font-size: 1.2rem;
-            transition: color 0.3s ease;
-        }
-        
-        .social-links a:hover {
-            color: #ff6b35;
-        }
-        
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        /* Mobile Responsive */
-        @media (max-width: 768px) {
-            .hamburger {
-                display: flex;
-            }
-            
-            .nav-menu {
-                position: fixed;
-                left: -100%;
-                top: 70px;
-                flex-direction: column;
-                background: rgba(0, 0, 0, 0.95);
-                width: 100%;
-                text-align: center;
-                transition: 0.3s;
-                box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-                padding: 2rem 0;
-                gap: 1rem;
-            }
-            
-            .nav-menu.active {
-                left: 0;
-            }
-            
-            .hamburger.active .bar:nth-child(2) {
-                opacity: 0;
-            }
-            
-            .hamburger.active .bar:nth-child(1) {
-                transform: translateY(8px) rotate(45deg);
-            }
-            
-            .hamburger.active .bar:nth-child(3) {
-                transform: translateY(-8px) rotate(-45deg);
-            }
-            
-            .hero-content h1 {
-                font-size: 2.5rem;
-            }
-            
-            .hero-content p {
-                font-size: 1.1rem;
-            }
-            
-            .section-title {
-                font-size: 2rem;
-            }
-            
-            .menu-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .contact-grid {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-            
-            .form-row {
-                grid-template-columns: 1fr;
-            }
-            
-            .nav-container {
-                padding: 0 1rem;
-            }
-            
-            .container {
-                padding: 0 1rem;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .hero-content h1 {
-                font-size: 2rem;
-            }
-            
-            .about, .menu, .testimonials, .booking, .contact {
-                padding: 3rem 1rem;
-            }
-        }
-    </style>
+    <title>Moments Cafe & Lounge - Experience Unforgettable Moments</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#" class="logo">Moments Cafe</a>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#menu" class="nav-link">Menu</a></li>
-                <li><a href="#testimonials" class="nav-link">Reviews</a></li>
-                <li><a href="#booking" class="nav-link">Book Now</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <h2>Moments</h2>
             </div>
-        </div>
-    </nav>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#menu" class="nav__link">Menu</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#reviews" class="nav__link">Reviews</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#booking" class="nav__link btn btn--primary nav__cta">Book a Table</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Moments Cafe & Lounge</h1>
-            <p>Experience fine dining in our modern lounge atmosphere with private cabins and exceptional service</p>
-            <a href="#booking" class="cta-button">Book Your Table</a>
+    <section class="hero" id="home">
+        <div class="hero__content">
+            <h1 class="hero__title">Moments Cafe & Lounge</h1>
+            <p class="hero__subtitle">Experience Unforgettable Moments</p>
+            <a href="#booking" class="btn btn--primary hero__cta">Book Your Table Now</a>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section class="about" id="about">
         <div class="container">
-            <h2 class="section-title">Why Choose Moments Cafe?</h2>
-            <div class="about-grid">
-                <div class="feature-card">
-                    <h3>Private Dining Spaces</h3>
-                    <p>Private dining spaces perfect for intimate conversations and romantic dinners</p>
+            <div class="section-header">
+                <h2 class="section-title">About Moments</h2>
+                <p class="section-subtitle">Where every moment becomes a memory</p>
+            </div>
+            <div class="about__content">
+                <div class="about__text">
+                    <p>Welcome to Moments Cafe & Lounge, where culinary excellence meets exceptional ambiance. Located in the heart of Kota, we offer a unique dining experience that combines the warmth of a cafe with the sophistication of a lounge.</p>
+                    <p>Whether you're looking for an intimate dinner in our private cabins, celebrating with friends in our spacious party hall, or enjoying a casual meal at our general tables, we create the perfect setting for every occasion.</p>
                 </div>
-                <div class="feature-card">
-                    <h3>Special Celebrations</h3>
-                    <p>Spacious venue for celebrations, birthdays, and special occasions</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Multi-Cuisine Menu</h3>
-                    <p>Multi-cuisine menu with Indian, Chinese, Italian, and Continental dishes</p>
+                <div class="about__features">
+                    <div class="feature-card">
+                        <div class="feature-card__icon">
+                            <i class="fas fa-door-open"></i>
+                        </div>
+                        <h3 class="feature-card__title">Personal Cabins</h3>
+                        <p class="feature-card__description">Private dining spaces perfect for intimate conversations and special occasions.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-card__icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3 class="feature-card__title">Food & Drinks</h3>
+                        <p class="feature-card__description">Carefully crafted menu featuring local favorites and international cuisine.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-card__icon">
+                            <i class="fas fa-glass-cheers"></i>
+                        </div>
+                        <h3 class="feature-card__title">Party Hall</h3>
+                        <p class="feature-card__description">Spacious venue ideal for celebrations, events, and group gatherings.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Menu Section -->
-    <section id="menu" class="menu">
+    <section class="menu" id="menu">
         <div class="container">
-            <h2 class="section-title">Our Menu</h2>
-            <div class="menu-grid">
-                <div class="menu-category">
-                    <div class="menu-header">
-                        <h3>Indian Cuisine</h3>
-                    </div>
-                    <div class="menu-items">
+            <div class="section-header">
+                <h2 class="section-title">Our Menu</h2>
+                <p class="section-subtitle">Discover our carefully curated selection</p>
+            </div>
+            <div class="menu__tabs">
+                <button class="menu__tab active" data-category="appetizers">Appetizers</button>
+                <button class="menu__tab" data-category="mains">Main Course</button>
+                <button class="menu__tab" data-category="drinks">Drinks</button>
+                <button class="menu__tab" data-category="desserts">Desserts</button>
+            </div>
+            <div class="menu__content">
+                <!-- Appetizers -->
+                <div class="menu__category active" id="appetizers">
+                    <div class="menu__items">
                         <div class="menu-item">
-                            <span class="item-name">Butter Chicken</span>
-                            <span class="item-price">₹320</span>
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__name">Crispy Chicken Wings</h3>
+                                <span class="menu-item__price">₹299</span>
+                            </div>
+                            <p class="menu-item__description">Spicy wings served with ranch dip</p>
                         </div>
                         <div class="menu-item">
-                            <span class="item-name">Dal Makhani</span>
-                            <span class="item-price">₹220</span>
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__name">Paneer Tikka</h3>
+                                <span class="menu-item__price">₹249</span>
+                            </div>
+                            <p class="menu-item__description">Grilled cottage cheese with mint chutney</p>
                         </div>
                         <div class="menu-item">
-                            <span class="item-name">Paneer Tikka</span>
-                            <span class="item-price">₹280</span>
-                        </div>
-                        <div class="menu-item">
-                            <span class="item-name">Biryani Special</span>
-                            <span class="item-price">₹350</span>
-                        </div>
-                        <div class="menu-item">
-                            <span class="item-name">Naan & Kulcha</span>
-                            <span class="item-price">₹80</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="menu-category">
-                    <div class="menu-header">
-                        <h3>Chinese & Continental</h3>
-                    </div>
-                    <div class="menu-items">
-                        <div class="menu-item">
-                            <span class="item-name">Alfredo Pasta</span>
-                            <span class="item-price">₹250</span>
-                        </div>
-                        <div class="menu-item">
-                            <span class="item-name">Manchurian</span>
-                            <span class="item-price">₹200</span>
-                        </div>
-                        <div class="menu-item">
-                            <span class="item-name">Fried Rice</span>
-                            <span class="item-price">₹180</span>
-                        </div>
-                        <div class="menu-item">
-                            <span class="item-name">Spring Rolls</span>
-                            <span class="item-price">₹160</span>
-                        </div>
-                        <div class="menu-item">
-                            <span class="item-name">Grilled Sandwich</span>
-                            <span class="item-price">₹120</span>
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__name">Stuffed Mushrooms</h3>
+                                <span class="menu-item__price">₹199</span>
+                            </div>
+                            <p class="menu-item__description">Cheese-filled mushrooms baked to perfection</p>
                         </div>
                     </div>
                 </div>
                 
-                <div class="menu-category">
-                    <div class="menu-header">
-                        <h3>Beverages & Desserts</h3>
+                <!-- Main Course -->
+                <div class="menu__category" id="mains">
+                    <div class="menu__items">
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__name">Butter Chicken</h3>
+                                <span class="menu-item__price">₹399</span>
+                            </div>
+                            <p class="menu-item__description">Creamy tomato curry with tender chicken</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__name">Paneer Makhani</h3>
+                                <span class="menu-item__price">₹349</span>
+                            </div>
+                            <p class="menu-item__description">Rich cottage cheese in buttery gravy</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__name">Biryani Special</h3>
+                                <span class="menu-item__price">₹449</span>
+                            </div>
+                            <p class="menu-item__description">Aromatic basmati rice with choice of meat</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__name">Pasta Alfredo</h3>
+                                <span class="menu-item__price">₹299</span>
+                            </div>
+                            <p class="menu-item__description">Creamy white sauce pasta with herbs</p>
+                        </div>
                     </div>
-                    <div class="menu-items">
+                </div>
+                
+                <!-- Drinks -->
+                <div class="menu__category" id="drinks">
+                    <div class="menu__items">
                         <div class="menu-item">
-                            <span class="item-name">Fresh Lime Soda</span>
-                            <span class="item-price">₹80</span>
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__name">Fresh Lime Soda</h3>
+                                <span class="menu-item__price">₹99</span>
+                            </div>
+                            <p class="menu-item__description">Refreshing lime with sparkling water</p>
                         </div>
                         <div class="menu-item">
-                            <span class="item-name">Cold Coffee</span>
-                            <span class="item-price">₹120</span>
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__name">Masala Chai</h3>
+                                <span class="menu-item__price">₹49</span>
+                            </div>
+                            <p class="menu-item__description">Traditional Indian spiced tea</p>
                         </div>
                         <div class="menu-item">
-                            <span class="item-name">Kulfi Special</span>
-                            <span class="item-price">₹100</span>
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__name">Cold Coffee</h3>
+                                <span class="menu-item__price">₹149</span>
+                            </div>
+                            <p class="menu-item__description">Chilled coffee with vanilla ice cream</p>
                         </div>
                         <div class="menu-item">
-      
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__name">Virgin Mojito</h3>
+                                <span class="menu-item__price">₹129</span>
+                            </div>
+                            <p class="menu-item__description">Mint and lime refresher</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Desserts -->
+                <div class="menu__category" id="desserts">
+                    <div class="menu__items">
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__name">Chocolate Brownie</h3>
+                                <span class="menu-item__price">₹179</span>
+                            </div>
+                            <p class="menu-item__description">Warm brownie with vanilla ice cream</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__name">Gulab Jamun</h3>
+                                <span class="menu-item__price">₹99</span>
+                            </div>
+                            <p class="menu-item__description">Traditional sweet dumplings in syrup</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__name">Kulfi</h3>
+                                <span class="menu-item__price">₹89</span>
+                            </div>
+                            <p class="menu-item__description">Indian ice cream with pistachios</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Customer Reviews</h2>
+                <p class="section-subtitle">What our guests say about us</p>
+            </div>
+            <div class="reviews__slider">
+                <div class="reviews__container">
+                    <div class="review-card active">
+                        <div class="review-card__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-card__text">"Amazing ambiance and delicious food! The personal cabins are perfect for intimate dining."</p>
+                        <h4 class="review-card__author">Arjun Sharma</h4>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-card__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-card__text">"Great service and wonderful atmosphere. Perfect place for celebrations with friends."</p>
+                        <h4 class="review-card__author">Priya Gupta</h4>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-card__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p class="review-card__text">"Excellent food quality and the party hall is spacious. Highly recommend for special occasions."</p>
+                        <h4 class="review-card__author">Rahul Jain</h4>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-card__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-card__text">"Love the cozy ambiance and variety in the menu. Staff is very friendly and accommodating."</p>
+                        <h4 class="review-card__author">Sneha Agarwal</h4>
+                    </div>
+                </div>
+                <div class="reviews__controls">
+                    <button class="reviews__btn reviews__btn--prev" id="prev-review">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="reviews__dots" id="review-dots"></div>
+                    <button class="reviews__btn reviews__btn--next" id="next-review">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="reviews__actions">
+                <button class="btn btn--outline" id="write-review-btn">Write a Review</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Booking Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact & Booking</h2>
+                <p class="section-subtitle">Reserve your table or get in touch</p>
+            </div>
+            <div class="contact__content">
+                <div class="contact__info">
+                    <div class="contact-item">
+                        <div class="contact-item__icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-item__content">
+                            <h3>Address</h3>
+                            <p>On First Floor, Near V Mart,<br>Dadabadi, Kota, Rajasthan</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item__icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-item__content">
+                            <h3>Phone</h3>
+                            <p>+91 8112291143</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item__icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-item__content">
+                            <h3>Email</h3>
+                            <p>contact@momentscafe.com</p>
+                        </div>
+                    </div>
+                    <div class="map-container">
+                        <div class="map-placeholder">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <p>Interactive Map</p>
+                            <small>Dadabadi, Kota, Rajasthan</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="booking-form" id="booking">
+                    <form class="form" id="booking-form">
+                        <h3 class="form__title">Reserve Your Table</h3>
+                        <div class="form__group">
+                            <label for="fullName" class="form__label">Full Name</label>
+                            <input type="text" id="fullName" name="fullName" class="form__input" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="phoneNumber" class="form__label">Phone Number</label>
+                            <input type="tel" id="phoneNumber" name="phoneNumber" class="form__input" required>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__group">
+                                <label for="date" class="form__label">Date</label>
+                                <input type="date" id="date" name="date" class="form__input" required>
+                            </div>
+                            <div class="form__group">
+                                <label for="time" class="form__label">Time</label>
+                                <input type="time" id="time" name="time" class="form__input" required>
+                            </div>
+                        </div>
+                        <div class="form__group">
+                            <label for="bookingFor" class="form__label">Booking For</label>
+                            <select id="bookingFor" name="bookingFor" class="form__input" required>
+                                <option value="">Select Option</option>
+                                <option value="table">Table Reservation</option>
+                                <option value="cabin">Personnel Cabin</option>
+                                <option value="party">Party Hall</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn--primary form__submit">Submit Booking</b
