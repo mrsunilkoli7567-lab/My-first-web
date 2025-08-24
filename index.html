@@ -354,4 +354,83 @@
     </section>
 
     <!-- Gallery Section -->
-    <section id="gallery" cla
+<section id="gallery" class="gallery">
+    <div class="container">
+        <div class="section-header">
+            <h2>Gallery</h2>
+            <p>A glimpse into our world</p>
+        </div>
+        <div class="gallery-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="food">Food</button>
+            <button class="filter-btn" data-filter="interior">Interior</button>
+            <button class="filter-btn" data-filter="events">Events</button>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item" data-category="food">
+                <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Delicious Food">
+                <div class="gallery-overlay">
+                    <h4>Signature Dishes</h4>
+                </div>
+            </div>
+            <!-- Add more gallery items as needed -->
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="section-header">
+            <h2>Contact Us</h2>
+            <p>Get in touch for reservations and inquiries</p>
+        </div>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h4>📍 Address</h4>
+                    <p>Near V Mart Dadabadi<br>Kota, Rajasthan</p>
+                </div>
+                <div class="contact-item">
+                    <h4>📞 Phone</h4>
+                    <p><a href="tel:8112291143">8112291143</a></p>
+                </div>
+                <div class="contact-item">
+                    <h4>🕐 Hours</h4>
+                    <p>Open Daily from 8:00 AM</p>
+                </div>
+                <div class="whatsapp-booking">
+                    <button id="whatsapp-btn" class="btn-whatsapp" onclick="bookViaWhatsApp('general')">
+                        📱 Book via WhatsApp
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Moments Cafe & Lounge</h3>
+                <p>Creating memorable dining experiences in the heart of Kota.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p>📍 Near V Mart Dadabadi, Kota</p>
+                <p>📞 8112291143</p>
+                <p>🕐 Open Daily from 8 AM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Moments Cafe & Lounge Restaurant. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
