@@ -1,1 +1,359 @@
-# My-first-web
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Moments Cafe & Lounge Restaurant | Kota</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h2>Moments Cafe</h2>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#menu" class="nav-link">Menu</a>
+                <a href="#booking" class="nav-link">Book Table</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Moments Cafe & Lounge Restaurant</h1>
+            <p class="hero-subtitle">First Floor, Near V Mart, Dadabadi, Kota</p>
+            <p class="hero-description">
+                Experience fine dining in our modern lounge atmosphere with private cabins and exceptional service
+            </p>
+            <button class="btn btn--primary btn--lg hero-cta" onclick="scrollToSection('booking')">Book Now</button>
+        </div>
+    </section>
+
+    <!-- Key Offerings Section -->
+    <section class="offerings" id="offerings">
+        <div class="container">
+            <h2 class="section-title">Why Choose Moments Cafe?</h2>
+            <div class="offerings-grid">
+                <div class="offering-card">
+                    <div class="offering-icon">🏠</div>
+                    <h3>Personal Cabins</h3>
+                    <p>Private dining spaces perfect for intimate conversations and romantic dinners</p>
+                </div>
+                <div class="offering-card">
+                    <div class="offering-icon">🎉</div>
+                    <h3>Party Hall</h3>
+                    <p>Spacious venue for celebrations, birthdays, and special occasions</p>
+                </div>
+                <div class="offering-card">
+                    <div class="offering-icon">🍽️</div>
+                    <h3>Delicious Food</h3>
+                    <p>Multi-cuisine menu with Indian, Chinese, Italian, and Continental dishes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">Customer Reviews</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p>"Amazing ambiance and delicious food! The personal cabins are perfect for intimate dining. Highly recommend the butter chicken and kulfi."</p>
+                    <h4>— Rahul Sharma</h4>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Celebrated my birthday here in their party hall. The staff was incredibly helpful and the food was exceptional. The premium package was worth every penny!"</p>
+                    <h4>— Priya Agarwal</h4>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Great place for casual dining and business meetings. The WiFi is strong and the coffee is excellent. The Alfredo pasta is my favorite!"</p>
+                    <h4>— Amit Kumar</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Page (HIGH PRIORITY) -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <h2 class="section-title">Our Menu</h2>
+
+            <!-- PASTA -->
+            <section class="menu-category">
+                <h3 class="menu-category-title">PASTA</h3>
+                <div class="menu-items-grid">
+                    <div class="menu-card">
+                        <h4>Penne Arrabbiata</h4>
+                        <p class="price">₹180</p>
+                        <p>Spicy tomato sauce with garlic and red chilies</p>
+                    </div>
+                    <div class="menu-card">
+                        <h4>Creamy Mushroom Pasta</h4>
+                        <p class="price">₹200</p>
+                        <p>Rich white sauce with fresh mushrooms and herbs</p>
+                    </div>
+                    <div class="menu-card">
+                        <h4>Alfredo Pasta</h4>
+                        <p class="price">₹220</p>
+                        <p>Classic creamy white sauce with parmesan cheese</p>
+                    </div>
+                    <div class="menu-card">
+                        <h4>Aglio e Olio</h4>
+                        <p class="price">₹160</p>
+                        <p>Simple olive oil, garlic, and herb preparation</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PIZZETA -->
+            <section class="menu-category">
+                <h3 class="menu-category-title">PIZZETA</h3>
+                <div class="menu-items-grid">
+                    <div class="menu-card">
+                        <h4>Margherita Pizzeta</h4>
+                        <p class="price">₹150</p>
+                        <p>Fresh basil, mozzarella, and tomato sauce</p>
+                    </div>
+                    <div class="menu-card">
+                        <h4>Pepperoni Pizzeta</h4>
+                        <p class="price">₹180</p>
+                        <p>Spicy pepperoni with cheese and herbs</p>
+                    </div>
+                    <div class="menu-card">
+                        <h4>Veggie Supreme</h4>
+                        <p class="price">₹170</p>
+                        <p>Bell peppers, onions, mushrooms, and olives</p>
+                    </div>
+                    <div class="menu-card">
+                        <h4>BBQ Chicken Pizzeta</h4>
+                        <p class="price">₹200</p>
+                        <p>Grilled chicken with BBQ sauce and cheese</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- INDIAN DELIGHTS -->
+            <section class="menu-category">
+                <h3 class="menu-category-title">INDIAN DELIGHTS</h3>
+                <div class="menu-items-grid">
+                    <div class="menu-card">
+                        <h4>Paneer Tikka</h4>
+                        <p class="price">₹220</p>
+                        <p>Marinated cottage cheese grilled to perfection</p>
+                    </div>
+                    <div class="menu-card">
+                        <h4>Dal Makhani</h4>
+                        <p class="price">₹160</p>
+                        <p>Creamy black lentils slow-cooked with spices</p>
+                    </div>
+                    <div class="menu-card">
+                        <h4>Butter Chicken</h4>
+                        <p class="price">₹240</p>
+                        <p>Tender chicken in rich tomato-based curry</p>
+                    </div>
+                    <div class="menu-card">
+                        <h4>Veg Biryani</h4>
+                        <p class="price">₹180</p>
+                        <p>Fragrant basmati rice with mixed vegetables</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CHINESE -->
+            <section class="menu-category">
+                <h3 class="menu-category-title">CHINESE</h3>
+                <div class="menu-items-grid">
+                    <div class="menu-card">
+                        <h4>Hakka Noodles</h4>
+                        <p class="price">₹140</p>
+                        <p>Stir-fried noodles with vegetables and soy sauce</p>
+                    </div>
+                    <div class="menu-card">
+                        <h4>Chilli Paneer</h4>
+                        <p class="price">₹190</p>
+                        <p>Spicy cottage cheese with peppers and onions</p>
+                    </div>
+                    <div class="menu-card">
+                        <h4>Fried Rice</h4>
+                        <p class="price">₹130</p>
+                        <p>Wok-fried rice with vegetables and Chinese spices</p>
+                    </div>
+                    <div class="menu-card">
+                        <h4>Manchurian Dry</h4>
+                        <p class="price">₹160</p>
+                        <p>Crispy vegetable balls in spicy sauce</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- BEVERAGES -->
+            <section class="menu-category">
+                <h3 class="menu-category-title">BEVERAGES</h3>
+                <div class="menu-items-grid">
+                    <div class="menu-card">
+                        <h4>Cappuccino</h4>
+                        <p class="price">₹120</p>
+                        <p>Rich espresso with steamed milk foam</p>
+                    </div>
+                    <div class="menu-card">
+                        <h4>Fresh Lime Soda</h4>
+                        <p class="price">₹80</p>
+                        <p>Refreshing lime with soda and mint</p>
+                    </div>
+                    <div class="menu-card">
+                        <h4>Virgin Mojito</h4>
+                        <p class="price">₹150</p>
+                        <p>Fresh mint, lime, and soda mocktail</p>
+                    </div>
+                    <div class="menu-card">
+                        <h4>Mango Lassi</h4>
+                        <p class="price">₹100</p>
+                        <p>Creamy yogurt drink with fresh mango</p>
+                    </div>
+                    <div class="menu-card">
+                        <h4>Green Tea</h4>
+                        <p class="price">₹90</p>
+                        <p>Antioxidant-rich herbal green tea</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- DESSERTS -->
+            <section class="menu-category">
+                <h3 class="menu-category-title">DESSERTS</h3>
+                <div class="menu-items-grid">
+                    <div class="menu-card">
+                        <h4>Gulab Jamun</h4>
+                        <p class="price">₹120</p>
+                        <p>Traditional milk dumplings in sugar syrup</p>
+                    </div>
+                    <div class="menu-card">
+                        <h4>Chocolate Brownie</h4>
+                        <p class="price">₹150</p>
+                        <p>Rich chocolate brownie with vanilla ice cream</p>
+                    </div>
+                    <div class="menu-card">
+                        <h4>Kulfi</h4>
+                        <p class="price">₹100</p>
+                        <p>Traditional Indian ice cream with nuts</p>
+                    </div>
+                    <div class="menu-card">
+                        <h4>Tiramisu</h4>
+                        <p class="price">₹180</p>
+                        <p>Classic Italian coffee-flavored dessert</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Party Menu Section -->
+            <section class="party-menu">
+                <h3 class="menu-category-title">KITTY / BIRTHDAY PARTY MENU</h3>
+                <div class="party-packages">
+                    <div class="party-package">
+                        <h4>Deluxe Package - ₹450 per person</h4>
+                        <ul>
+                            <li>Welcome drink</li>
+                            <li>2 Starters</li>
+                            <li>2 Main courses</li>
+                            <li>Rice/Bread</li>
+                            <li>1 Dessert</li>
+                            <li>Beverages</li>
+                        </ul>
+                    </div>
+                    <div class="party-package">
+                        <h4>Premium Package - ₹650 per person</h4>
+                        <ul>
+                            <li>Welcome mocktail</li>
+                            <li>3 Premium starters</li>
+                            <li>3 Main courses</li>
+                            <li>Biryani & Bread</li>
+                            <li>2 Desserts</li>
+                            <li>Premium beverages</li>
+                            <li>Special decoration</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="terms">
+                    <h4>Terms & Conditions</h4>
+                    <p>Booking required 2 days in advance. Minimum 10 persons. Full payment at the time of booking. Cancellation charges apply as per policy.</p>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking" id="booking">
+        <div class="container">
+            <h2 class="section-title">Book Your Table</h2>
+            <form id="bookingForm" class="booking-form">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" required />
+
+                <label for="phoneNumber">Phone Number</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required pattern="[0-9]{10}" placeholder="10 digit number" />
+
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required />
+
+                <label for="guests">Number of Guests</label>
+                <select id="guests" name="guests" required>
+                    <option value="" disabled selected>Select number</option>
+                    <!-- Guest numbers 1 to 20 -->
+                    <script>
+                        for(let i=1; i<=20; i++) {
+                            document.write(`<option value="${i}">${i}</option>`);
+                        }
+                    </script>
+                </select>
+
+                <label for="bookingType">Booking Type</label>
+                <select id="bookingType" name="bookingType" required>
+                    <option value="" disabled selected>Select type</option>
+                    <option value="Personal Cabin">Personal Cabin</option>
+                    <option value="Party Hall">Party Hall</option>
+                    <option value="Table Reservation">Table Reservation</option>
+                </select>
+
+                <button type="submit" class="btn btn--primary">Book on WhatsApp</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact & Location Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact & Location</h2>
+            <p><strong>Address:</strong> First Floor, Near V Mart, Dadabadi, Kota</p>
+            <p><strong>Phone:</strong> <a href="tel:+918112291143">8112291143</a></p>
+            <p><strong>Instagram:</strong> <a href="https://instagram.com/MOMENTS_CAFE_KOTA" target="_blank">@MOMENTS_CAFE_KOTA</a></p>
+            <div class="map-container">
+                <iframe
+                    src="https://maps.google.com/maps?q=Dadabadi,%20Kota&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    frameborder="0"
+                    allowfullscreen
+                    aria-hidden="false"
+                    tabindex="0"
+                ></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 Moments Cafe & Lounge Restaurant | All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+  </html>
+                  
