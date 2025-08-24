@@ -3,87 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moments Cafe & Lounge - Experience Unforgettable Moments</title>
+    <title>Moments Cafe & Lounge Restaurant | Kota</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header & Navigation -->
-    <header class="header" id="header">
-        <nav class="nav container">
-            <div class="nav__brand">
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
                 <h2>Moments</h2>
+                <span>Cafe & Lounge</span>
             </div>
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link">Home</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link">About</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#menu" class="nav__link">Menu</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#reviews" class="nav__link">Reviews</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#contact" class="nav__link">Contact</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#booking" class="nav__link btn btn--primary nav__cta">Book a Table</a>
-                    </li>
-                </ul>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#booking" class="nav-link">Booking</a></li>
+                <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero__content">
-            <h1 class="hero__title">Moments Cafe & Lounge</h1>
-            <p class="hero__subtitle">Experience Unforgettable Moments</p>
-            <a href="#booking" class="btn btn--primary hero__cta">Book Your Table Now</a>
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Moments Cafe & Lounge Restaurant</h1>
+            <p class="hero-subtitle">Experience culinary excellence in the heart of Kota</p>
+            <div class="hero-info">
+                <div class="info-item">
+                    <span class="info-icon">🕗</span>
+                    <span>Doors Open at 8 AM</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">📞</span>
+                    <span>8112291143</span>
+                </div>
+            </div>
+            <div class="hero-buttons">
+                <a href="#booking" class="btn-primary">Book Now</a>
+                <a href="#menu" class="btn-secondary">View Menu</a>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="about" id="about">
+    <section id="about" class="about">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">About Moments</h2>
-                <p class="section-subtitle">Where every moment becomes a memory</p>
+                <h2>About Moments</h2>
+                <p>Your perfect destination for memorable dining experiences</p>
             </div>
-            <div class="about__content">
-                <div class="about__text">
-                    <p>Welcome to Moments Cafe & Lounge, where culinary excellence meets exceptional ambiance. Located in the heart of Kota, we offer a unique dining experience that combines the warmth of a cafe with the sophistication of a lounge.</p>
-                    <p>Whether you're looking for an intimate dinner in our private cabins, celebrating with friends in our spacious party hall, or enjoying a casual meal at our general tables, we create the perfect setting for every occasion.</p>
-                </div>
-                <div class="about__features">
-                    <div class="feature-card">
-                        <div class="feature-card__icon">
-                            <i class="fas fa-door-open"></i>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Welcome to Moments Cafe & Lounge</h3>
+                    <p>At Moments Cafe & Lounge Restaurant, we believe every meal should be a celebration. Located in the heart of Kota, we offer an exquisite dining experience that combines delicious cuisine with elegant ambiance.</p>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <h4>Personal Cabins</h4>
+                            <p>Private dining spaces for intimate conversations and special moments</p>
                         </div>
-                        <h3 class="feature-card__title">Personal Cabins</h3>
-                        <p class="feature-card__description">Private dining spaces perfect for intimate conversations and special occasions.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-card__icon">
-                            <i class="fas fa-utensils"></i>
+                        <div class="feature-item">
+                            <h4>Party Hall</h4>
+                            <p>Spacious venue perfect for celebrations and corporate events</p>
                         </div>
-                        <h3 class="feature-card__title">Food & Drinks</h3>
-                        <p class="feature-card__description">Carefully crafted menu featuring local favorites and international cuisine.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-card__icon">
-                            <i class="fas fa-glass-cheers"></i>
+                        <div class="feature-item">
+                            <h4>Diverse Menu</h4>
+                            <p>From local favorites to international cuisine, something for everyone</p>
                         </div>
-                        <h3 class="feature-card__title">Party Hall</h3>
-                        <p class="feature-card__description">Spacious venue ideal for celebrations, events, and group gatherings.</p>
                     </div>
                 </div>
             </div>
@@ -91,286 +86,272 @@
     </section>
 
     <!-- Menu Section -->
-    <section class="menu" id="menu">
+    <section id="menu" class="menu">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Our Menu</h2>
-                <p class="section-subtitle">Discover our carefully curated selection</p>
+                <h2>Our Menu</h2>
+                <p>Discover our delicious offerings</p>
             </div>
-            <div class="menu__tabs">
-                <button class="menu__tab active" data-category="appetizers">Appetizers</button>
-                <button class="menu__tab" data-category="mains">Main Course</button>
-                <button class="menu__tab" data-category="drinks">Drinks</button>
-                <button class="menu__tab" data-category="desserts">Desserts</button>
+            
+            <div class="menu-search">
+                <input type="text" id="menu-search" placeholder="Search menu items...">
             </div>
-            <div class="menu__content">
-                <!-- Appetizers -->
-                <div class="menu__category active" id="appetizers">
-                    <div class="menu__items">
-                        <div class="menu-item">
-                            <div class="menu-item__header">
-                                <h3 class="menu-item__name">Crispy Chicken Wings</h3>
-                                <span class="menu-item__price">₹299</span>
-                            </div>
-                            <p class="menu-item__description">Spicy wings served with ranch dip</p>
+
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="party-menus">Party Menus</button>
+                <button class="category-btn" data-category="beverages">Beverages</button>
+                <button class="category-btn" data-category="food">Food</button>
+                <button class="category-btn" data-category="starters">Starters</button>
+            </div>
+
+            <div class="menu-content">
+                <!-- Party Menus -->
+                <div class="menu-category" data-category="party-menus">
+                    <h3>Party Menus</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item featured">
+                            <h4>Deluxe Party Menu</h4>
+                            <p class="menu-price">₹340/-</p>
+                            <ul class="menu-details">
+                                <li>Tea/Hot Coffee/Soup/Cold Drink</li>
+                                <li>Spring Roll/Manchurian/Veg Pakoda/Hara Bhara Kabab/Corn Chat</li>
+                                <li>Chole Bhature/Veg Biryani with Rayta/Paneer Rice</li>
+                                <li>Ice Cream(Any)/Mocktail(Any)</li>
+                            </ul>
                         </div>
-                        <div class="menu-item">
-                            <div class="menu-item__header">
-                                <h3 class="menu-item__name">Paneer Tikka</h3>
-                                <span class="menu-item__price">₹249</span>
-                            </div>
-                            <p class="menu-item__description">Grilled cottage cheese with mint chutney</p>
-                        </div>
-                        <div class="menu-item">
-                            <div class="menu-item__header">
-                                <h3 class="menu-item__name">Stuffed Mushrooms</h3>
-                                <span class="menu-item__price">₹199</span>
-                            </div>
-                            <p class="menu-item__description">Cheese-filled mushrooms baked to perfection</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Main Course -->
-                <div class="menu__category" id="mains">
-                    <div class="menu__items">
-                        <div class="menu-item">
-                            <div class="menu-item__header">
-                                <h3 class="menu-item__name">Butter Chicken</h3>
-                                <span class="menu-item__price">₹399</span>
-                            </div>
-                            <p class="menu-item__description">Creamy tomato curry with tender chicken</p>
-                        </div>
-                        <div class="menu-item">
-                            <div class="menu-item__header">
-                                <h3 class="menu-item__name">Paneer Makhani</h3>
-                                <span class="menu-item__price">₹349</span>
-                            </div>
-                            <p class="menu-item__description">Rich cottage cheese in buttery gravy</p>
-                        </div>
-                        <div class="menu-item">
-                            <div class="menu-item__header">
-                                <h3 class="menu-item__name">Biryani Special</h3>
-                                <span class="menu-item__price">₹449</span>
-                            </div>
-                            <p class="menu-item__description">Aromatic basmati rice with choice of meat</p>
-                        </div>
-                        <div class="menu-item">
-                            <div class="menu-item__header">
-                                <h3 class="menu-item__name">Pasta Alfredo</h3>
-                                <span class="menu-item__price">₹299</span>
-                            </div>
-                            <p class="menu-item__description">Creamy white sauce pasta with herbs</p>
+                        <div class="menu-item featured">
+                            <h4>Premium Party Menu</h4>
+                            <p class="menu-price">₹460/-</p>
+                            <ul class="menu-details">
+                                <li>Tea/Hot Coffee/Soup/Cold Drink</li>
+                                <li>Spring Roll/Manchurian/Veg Pakoda/Hara Bhara Kabab/Corn Chat</li>
+                                <li>Paneer Dish (65/Tikka/Pakoda)/Veg Biryani with Rayta/Dal</li>
+                                <li>Butter Roti/Laccha Paratha</li>
+                                <li>Gulab Jamun/Rasgulla/Sweets</li>
+                                <li>Ice Cream(Any)/Mocktail(Any)</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Drinks -->
-                <div class="menu__category" id="drinks">
-                    <div class="menu__items">
-                        <div class="menu-item">
-                            <div class="menu-item__header">
-                                <h3 class="menu-item__name">Fresh Lime Soda</h3>
-                                <span class="menu-item__price">₹99</span>
-                            </div>
-                            <p class="menu-item__description">Refreshing lime with sparkling water</p>
-                        </div>
-                        <div class="menu-item">
-                            <div class="menu-item__header">
-                                <h3 class="menu-item__name">Masala Chai</h3>
-                                <span class="menu-item__price">₹49</span>
-                            </div>
-                            <p class="menu-item__description">Traditional Indian spiced tea</p>
-                        </div>
-                        <div class="menu-item">
-                            <div class="menu-item__header">
-                                <h3 class="menu-item__name">Cold Coffee</h3>
-                                <span class="menu-item__price">₹149</span>
-                            </div>
-                            <p class="menu-item__description">Chilled coffee with vanilla ice cream</p>
-                        </div>
-                        <div class="menu-item">
-                            <div class="menu-item__header">
-                                <h3 class="menu-item__name">Virgin Mojito</h3>
-                                <span class="menu-item__price">₹129</span>
-                            </div>
-                            <p class="menu-item__description">Mint and lime refresher</p>
-                        </div>
+
+                <!-- Beverages -->
+                <div class="menu-category" data-category="beverages">
+                    <h3>Coffee</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item"><h4>Americano Hot</h4><p class="menu-price">₹69/-</p></div>
+                        <div class="menu-item"><h4>Cappuccino</h4><p class="menu-price">₹90/-</p></div>
+                        <div class="menu-item"><h4>Espresso</h4><p class="menu-price">₹90/-</p></div>
+                        <div class="menu-item"><h4>Cold Coffee</h4><p class="menu-price">₹120/-</p></div>
+                        <div class="menu-item"><h4>Latte</h4><p class="menu-price">₹110/-</p></div>
+                        <div class="menu-item"><h4>Mocha</h4><p class="menu-price">₹110/-</p></div>
+                    </div>
+
+                    <h3>Tea</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item"><h4>Classic Tea</h4><p class="menu-price">₹40/-</p></div>
+                        <div class="menu-item"><h4>Ginger Tea</h4><p class="menu-price">₹55/-</p></div>
+                        <div class="menu-item"><h4>Special Masala Tea</h4><p class="menu-price">₹65/-</p></div>
+                        <div class="menu-item"><h4>Green Tea</h4><p class="menu-price">₹60/-</p></div>
+                        <div class="menu-item"><h4>Lemon Tea</h4><p class="menu-price">₹60/-</p></div>
+                    </div>
+
+                    <h3>Shakes</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item"><h4>Oreo Shake</h4><p class="menu-price">₹130/-</p></div>
+                        <div class="menu-item"><h4>Cookies and Cream</h4><p class="menu-price">₹130/-</p></div>
+                        <div class="menu-item"><h4>Malted Milk</h4><p class="menu-price">₹120/-</p></div>
+                        <div class="menu-item"><h4>Strawberry</h4><p class="menu-price">₹120/-</p></div>
+                        <div class="menu-item"><h4>Banana</h4><p class="menu-price">₹90/-</p></div>
+                        <div class="menu-item"><h4>Choco Milk</h4><p class="menu-price">₹90/-</p></div>
+                        <div class="menu-item"><h4>Kitkat</h4><p class="menu-price">₹140/-</p></div>
+                    </div>
+
+                    <h3>Soft Drinks</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item"><h4>Red Bull</h4><p class="menu-price">₹140/-</p></div>
+                        <div class="menu-item"><h4>Monster Energy</h4><p class="menu-price">₹140/-</p></div>
+                        <div class="menu-item"><h4>Sting/Dew</h4><p class="menu-price">₹30/-</p></div>
+                        <div class="menu-item"><h4>Coke/Sprite/Dew</h4><p class="menu-price">₹50/-</p></div>
+                        <div class="menu-item"><h4>Lahori Jeera</h4><p class="menu-price">₹60/-</p></div>
                     </div>
                 </div>
-                
-                <!-- Desserts -->
-                <div class="menu__category" id="desserts">
-                    <div class="menu__items">
-                        <div class="menu-item">
-                            <div class="menu-item__header">
-                                <h3 class="menu-item__name">Chocolate Brownie</h3>
-                                <span class="menu-item__price">₹179</span>
-                            </div>
-                            <p class="menu-item__description">Warm brownie with vanilla ice cream</p>
+
+                <!-- Food -->
+                <div class="menu-category" data-category="food">
+                    <h3>The Brown Breads</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item"><h4>Plain Italian Sandwich</h4><p class="menu-price">₹120/-</p></div>
+                        <div class="menu-item"><h4>Grilled Butter Sandwich</h4><p class="menu-price">₹140/-</p></div>
+                        <div class="menu-item"><h4>Grilled Cheese Sandwich</h4><p class="menu-price">₹160/-</p></div>
+                        <div class="menu-item"><h4>Garlic Cheese Bread</h4><p class="menu-price">₹110/-</p></div>
+                    </div>
+
+                    <h3>Italian Bread</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item"><h4>Turkish Burger</h4><p class="menu-price">₹70/-</p></div>
+                        <div class="menu-item"><h4>Veggie Burger</h4><p class="menu-price">₹80/-</p></div>
+                        <div class="menu-item"><h4>Cheese Burger</h4><p class="menu-price">₹90/-</p></div>
+                        <div class="menu-item"><h4>Tandoori Burger</h4><p class="menu-price">₹90/-</p></div>
+                        <div class="menu-item"><h4>Volcano Cheese Burger</h4><p class="menu-price">₹120/-</p></div>
+                    </div>
+
+                    <h3>Momos</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item"><h4>Tibetan Dumpling (fry)</h4><p class="menu-price">₹120/-</p></div>
+                        <div class="menu-item"><h4>Dumpling (Steam)</h4><p class="menu-price">₹110/-</p></div>
+                        <div class="menu-item"><h4>Dumpling Tandoori</h4><p class="menu-price">₹130/-</p></div>
+                        <div class="menu-item"><h4>Dumpling Cheese</h4><p class="menu-price">₹140/-</p></div>
+                        <div class="menu-item"><h4>Dumpling (gravy)</h4><p class="menu-price">₹130/-</p></div>
+                    </div>
+
+                    <h3>Pasta</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item"><h4>Arrabbiata (Red Pasta)</h4><p class="menu-price">₹155/-</p></div>
+                        <div class="menu-item"><h4>Alfredo (White Sauce Pasta)</h4><p class="menu-price">₹165/-</p></div>
+                        <div class="menu-item"><h4>Pink Sauce Pasta</h4><p class="menu-price">₹180/-</p></div>
+                        <div class="menu-item"><h4>Afghani Pasta</h4><p class="menu-price">₹190/-</p></div>
+                        <div class="menu-item"><h4>Korean Pasta</h4><p class="menu-price">₹220/-</p></div>
+                    </div>
+
+                    <h3>Pizza</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item"><h4>Italian Pizza</h4><p class="menu-price">₹190/-</p></div>
+                        <div class="menu-item"><h4>Classic Margherita Pizza</h4><p class="menu-price">₹210/-</p></div>
+                        <div class="menu-item"><h4>Double Cheese Margherita Pizza</h4><p class="menu-price">₹240/-</p></div>
+                        <div class="menu-item"><h4>Cheese Corn Pizza</h4><p class="menu-price">₹210/-</p></div>
+                        <div class="menu-item"><h4>Fresh Veggie Pizza</h4><p class="menu-price">₹210/-</p></div>
+                        <div class="menu-item"><h4>Paneer Makhani Pizza</h4><p class="menu-price">₹240/-</p></div>
+                    </div>
+
+                    <h3>Rice & Main Course</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item"><h4>Normal Thali</h4><p class="menu-price">₹150/-</p></div>
+                        <div class="menu-item"><h4>Special Thali</h4><p class="menu-price">₹200/-</p></div>
+                        <div class="menu-item"><h4>Moments Special Jumbo Paneer</h4><p class="menu-price">₹280/-</p></div>
+                        <div class="menu-item"><h4>Veg Fried Rice</h4><p class="menu-price">₹120/-</p></div>
+                        <div class="menu-item"><h4>Veg Pulao</h4><p class="menu-price">₹130/-</p></div>
+                        <div class="menu-item"><h4>Jeera Rice</h4><p class="menu-price">₹130/-</p></div>
+                    </div>
+                </div>
+
+                <!-- Starters -->
+                <div class="menu-category" data-category="starters">
+                    <h3>Starters</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item"><h4>Paneer Pakoda</h4><p class="menu-price">₹130/-</p></div>
+                        <div class="menu-item"><h4>Crispy Nuggets Of Paneer</h4><p class="menu-price">₹160/-</p></div>
+                        <div class="menu-item"><h4>Sweet Corn Chaat</h4><p class="menu-price">₹80/-</p></div>
+                        <div class="menu-item"><h4>Paneer 65</h4><p class="menu-price">₹140/-</p></div>
+                        <div class="menu-item"><h4>Nachos with Salsa Dip</h4><p class="menu-price">₹90/-</p></div>
+                        <div class="menu-item"><h4>Cheese Nachos</h4><p class="menu-price">₹80/-</p></div>
+                        <div class="menu-item"><h4>Manchurian dry/gravy</h4><p class="menu-price">₹120/-</p></div>
+                        <div class="menu-item"><h4>French Fries</h4><p class="menu-price">₹80/-</p></div>
+                        <div class="menu-item"><h4>Cheese Fries</h4><p class="menu-price">₹140/-</p></div>
+                        <div class="menu-item"><h4>Honey Chilli Potato</h4><p class="menu-price">₹120/-</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <div class="section-header">
+                <h2>Book Your Table</h2>
+                <p>Reserve your perfect dining experience</p>
+            </div>
+            <div class="booking-content">
+                <form id="booking-form" class="booking-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" name="date" required>
                         </div>
-                        <div class="menu-item">
-                            <div class="menu-item__header">
-                                <h3 class="menu-item__name">Gulab Jamun</h3>
-                                <span class="menu-item__price">₹99</span>
-                            </div>
-                            <p class="menu-item__description">Traditional sweet dumplings in syrup</p>
-                        </div>
-                        <div class="menu-item">
-                            <div class="menu-item__header">
-                                <h3 class="menu-item__name">Kulfi</h3>
-                                <span class="menu-item__price">₹89</span>
-                            </div>
-                            <p class="menu-item__description">Indian ice cream with pistachios</p>
+                        <div class="form-group">
+                            <label for="time">Time</label>
+                            <input type="time" id="time" name="time" required>
                         </div>
                     </div>
+                    <div class="form-group">
+                        <label for="booking-type">Booking Type</label>
+                        <select id="booking-type" name="booking-type" required>
+                            <option value="">Select booking type</option>
+                            <option value="personal-cabin">Personal Cabin</option>
+                            <option value="party-hall">Party Hall</option>
+                            <option value="table-reservation">Table Reservation</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Number of Guests</label>
+                        <input type="number" id="guests" name="guests" min="1" max="50" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Special Requests</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Any special requirements..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Book Now</button>
+                </form>
+
+                <div class="terms-conditions">
+                    <h3>Terms & Conditions</h3>
+                    <ul>
+                        <li>Advance booking required for personal cabins and party hall</li>
+                        <li>Cancellation must be done 24 hours in advance</li>
+                        <li>Outside food and beverages are not allowed</li>
+                        <li>Management reserves the right to refuse service</li>
+                        <li>Party bookings require minimum 2 hours slot</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Reviews Section -->
-    <section class="reviews" id="reviews">
+    <section id="reviews" class="reviews">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Customer Reviews</h2>
-                <p class="section-subtitle">What our guests say about us</p>
+                <h2>What Our Customers Say</h2>
+                <p>Real experiences from our valued guests</p>
             </div>
-            <div class="reviews__slider">
-                <div class="reviews__container">
-                    <div class="review-card active">
-                        <div class="review-card__rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <p class="review-card__text">"Amazing ambiance and delicious food! The personal cabins are perfect for intimate dining."</p>
-                        <h4 class="review-card__author">Arjun Sharma</h4>
-                    </div>
-                    <div class="review-card">
-                        <div class="review-card__rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <p class="review-card__text">"Great service and wonderful atmosphere. Perfect place for celebrations with friends."</p>
-                        <h4 class="review-card__author">Priya Gupta</h4>
-                    </div>
-                    <div class="review-card">
-                        <div class="review-card__rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                        <p class="review-card__text">"Excellent food quality and the party hall is spacious. Highly recommend for special occasions."</p>
-                        <h4 class="review-card__author">Rahul Jain</h4>
-                    </div>
-                    <div class="review-card">
-                        <div class="review-card__rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <p class="review-card__text">"Love the cozy ambiance and variety in the menu. Staff is very friendly and accommodating."</p>
-                        <h4 class="review-card__author">Sneha Agarwal</h4>
+            <div class="reviews-slider">
+                <div class="review-slide active">
+                    <div class="review-content">
+                        <div class="stars">★★★★★</div>
+                        <p>"Amazing ambiance and delicious food! The personal cabins are perfect for private conversations. Highly recommended!"</p>
+                        <h4>Priya Sharma</h4>
                     </div>
                 </div>
-                <div class="reviews__controls">
-                    <button class="reviews__btn reviews__btn--prev" id="prev-review">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-                    <div class="reviews__dots" id="review-dots"></div>
-                    <button class="reviews__btn reviews__btn--next" id="next-review">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
+                <div class="review-slide">
+                    <div class="review-content">
+                        <div class="stars">★★★★☆</div>
+                        <p>"Great place for parties. The party hall is spacious and well-decorated. Food quality is excellent."</p>
+                        <h4>Rohit Kumar</h4>
+                    </div>
+                </div>
+                <div class="review-slide">
+                    <div class="review-content">
+                        <div class="stars">★★★★★</div>
+                        <p>"Best cafe in Kota! Their coffee is outstanding and the staff is very friendly. Will definitely visit again."</p>
+                        <h4>Anjali Singh</h4>
+                    </div>
                 </div>
             </div>
-            <div class="reviews__actions">
-                <button class="btn btn--outline" id="write-review-btn">Write a Review</button>
+            <div class="slider-controls">
+                <button class="slider-btn prev" onclick="changeSlide(-1)">‹</button>
+                <button class="slider-btn next" onclick="changeSlide(1)">›</button>
             </div>
         </div>
     </section>
 
-    <!-- Contact & Booking Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Contact & Booking</h2>
-                <p class="section-subtitle">Reserve your table or get in touch</p>
-            </div>
-            <div class="contact__content">
-                <div class="contact__info">
-                    <div class="contact-item">
-                        <div class="contact-item__icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-item__content">
-                            <h3>Address</h3>
-                            <p>On First Floor, Near V Mart,<br>Dadabadi, Kota, Rajasthan</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-item__icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-item__content">
-                            <h3>Phone</h3>
-                            <p>+91 8112291143</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-item__icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-item__content">
-                            <h3>Email</h3>
-                            <p>contact@momentscafe.com</p>
-                        </div>
-                    </div>
-                    <div class="map-container">
-                        <div class="map-placeholder">
-                            <i class="fas fa-map-marked-alt"></i>
-                            <p>Interactive Map</p>
-                            <small>Dadabadi, Kota, Rajasthan</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="booking-form" id="booking">
-                    <form class="form" id="booking-form">
-                        <h3 class="form__title">Reserve Your Table</h3>
-                        <div class="form__group">
-                            <label for="fullName" class="form__label">Full Name</label>
-                            <input type="text" id="fullName" name="fullName" class="form__input" required>
-                        </div>
-                        <div class="form__group">
-                            <label for="phoneNumber" class="form__label">Phone Number</label>
-                            <input type="tel" id="phoneNumber" name="phoneNumber" class="form__input" required>
-                        </div>
-                        <div class="form__row">
-                            <div class="form__group">
-                                <label for="date" class="form__label">Date</label>
-                                <input type="date" id="date" name="date" class="form__input" required>
-                            </div>
-                            <div class="form__group">
-                                <label for="time" class="form__label">Time</label>
-                                <input type="time" id="time" name="time" class="form__input" required>
-                            </div>
-                        </div>
-                        <div class="form__group">
-                            <label for="bookingFor" class="form__label">Booking For</label>
-                            <select id="bookingFor" name="bookingFor" class="form__input" required>
-                                <option value="">Select Option</option>
-                                <option value="table">Table Reservation</option>
-                                <option value="cabin">Personnel Cabin</option>
-                                <option value="party">Party Hall</option>
-                            </select>
-                        </div>
-                        <button type="submit" class="btn btn--primary form__submit">Submit Booking</b
+    <!-- Gallery Section -->
+    <section id="gallery" cla
